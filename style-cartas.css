@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ff947d;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px;
+    margin-top: 20px;
+}
+header nav img{
+    width: 50px;
+}
+button{
+    background-color: #fff;
+    color: #ff947d;
+    padding: 20px 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#coleccion{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+.container-ropa img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.container-ropa{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.img-ropa{
+    width: 45vw;
+    height: 40vw;
+    overflow: hidden;
+}
+
+.img-ropa img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+@media(min-width: 320px){
+    header nav{
+        display: flex;
+        justify-content: center;
+    }
+
+    #coleccion{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-ropa{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container-ropa img{
+        width: 250px;
+        height: 250px;
+    }
+    .img-ropa{
+        width: 95vw;
+        height: 95vw;
+        overflow: hidden;
+    }
+    .img-ropa img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+}
+@media(min-width: 768px){
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-ropa{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .container-ropa img{
+        width: 350px;
+        height: 350px;
+    }
+    
+}
+@media(min-width: 1024px){
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 45px;
+        margin-top: 20px;
+    }
+    header nav img{
+        width: 50px;
+    }
+    button{
+        background-color: #fff;
+        color: #ff947d;
+        padding: 20px 50px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #coleccion{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        margin: 20px;
+    }
+    .container-ropa img{
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    .container-ropa{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+    
+    .img-ropa{
+        width: 45vw;
+        height: 40vw;
+        overflow: hidden;
+    }
+    
+    .img-ropa img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+}
